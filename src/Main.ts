@@ -11,17 +11,25 @@ app.set('views', path.join(__dirname, 'views'));
 app.use(Express.static(path.join(__dirname, 'public')));
 
 app.get('/', async (req, res) => {
-    let clients = await JSON.parse(FS.readFileSync('/json/clients.json', 'utf8'));
+    let clients = await JSON.parse(FS.readFileSync('/beast-json/clients.json', 'utf8'));
     var count = Object.keys(clients.clients).length;
     res.render('pages/index', {
         feedCount: count
     });
 });
 
+app.get('/stats', async (req, res) => {
+    let clients = await JSON.parse(FS.readFileSync('/beast-json/clients.json', 'utf8'));
+    var count = Object.keys(clients.clients).length;
+    res.render('pages/stats', {
+        feedCount: count
+    });
+});
+
 app.get('/feeder-map', async (req, res) => {
-    let Rclients = await JSON.parse(FS.readFileSync('/json/clients.json', 'utf8'));
-    let Mclients = await JSON.parse(FS.readFileSync('/mlat/clients.json', 'utf8'));
-    let Msync = await JSON.parse(FS.readFileSync('/mlat/sync.json', 'utf8'));
+    let Rclients = await JSON.parse(FS.readFileSync('/beast-json/clients.json', 'utf8'));
+    let Mclients = await JSON.parse(FS.readFileSync('/mlat-json/clients.json', 'utf8'));
+    let Msync = await JSON.parse(FS.readFileSync('/mlat-json/sync.json', 'utf8'));
     var count = Object.keys(Rclients.clients).length;
 
     res.render('pages/feeder-map', {
@@ -30,7 +38,7 @@ app.get('/feeder-map', async (req, res) => {
 });
 
 app.get('/myip', async (req, res) => {
-    let clients = await JSON.parse(FS.readFileSync('/json/clients.json', 'utf8'));
+    let clients = await JSON.parse(FS.readFileSync('/beast-json/clients.json', 'utf8'));
     var count = Object.keys(clients.clients).length;
     var ip = req.headers['cf-connecting-ip'];
     var match = false;
