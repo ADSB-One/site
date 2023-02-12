@@ -28,7 +28,7 @@ class FeederMap extends React.Component {
     }
 
     async componentDidMount() {
-        await axios.get('http://api.adsb.one/clients/beast')
+        await axios.get('https://api.adsb.one/clients/beast')
         .then((r) => this.setState({ receivers: r.data.receivers }));
     }
 

@@ -27,7 +27,7 @@ export default class MLATMap extends React.Component {
     }
 
     async componentDidMount() {
-        await axios.get('http://api.adsb.one/clients/mlat')
+        await axios.get('https://api.adsb.one/clients/mlat')
         .then((r) => this.setState({ receivers: r.data.clients}))
     }
 

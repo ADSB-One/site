@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   margin: 0;
   overflow: hidden;
@@ -24,17 +29,8 @@ code {
 }
 
 .home_hero {
-  border-radius: 20px;
-  width: 95vw;
-  height:90vh;
-  background: url('https://www.thedrive.com/content/2022/01/Planes-At-Gates-Airport.jpg?quality=85');
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)), url('https://www.thedrive.com/content/2022/01/Planes-At-Gates-Airport.jpg?quality=85');
   background-repeat: no-repeat;
   background-position: center;
   background-size:cover;
-  background-attachment: fixed;
-}
-.home_hero h5 {
-  color:white;
-  font-size: 72px;
-  text-shadow:2px 2px #333;
 }

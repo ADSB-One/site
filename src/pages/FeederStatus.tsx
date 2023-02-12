@@ -22,7 +22,7 @@ export default class FeederStatus extends React.Component {
     }
 
     componentDidMount() {
-        axios.get('http://10.0.10.156:3001/feed-status')
+        axios.get('https://api.adsb.one/feed-status')
         .then((r) => {
 
             var receiverIds = '';

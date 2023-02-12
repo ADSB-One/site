@@ -9,6 +9,8 @@ import NoPage from './pages/NoPage';
 import GettingStarted from './pages/GettingStarted';
 import MLATMap from './pages/MLATMap';
 import Globe from './pages/Globe';
+import About from './pages/About';
+import Footer from './components/Footer';
 
 export default class App extends React.Component {
 
@@ -18,18 +20,16 @@ export default class App extends React.Component {
 
     render() {
         return (
-            <div>
-                <Navigation />
                 <Routes>
                     <Route path="/" element={<Home />} />
+                    <Route path='about' element={<About />} />
                     <Route path="getting-started" element={<GettingStarted />} />
-                    <Route path="globe" element={<Globe />} />
+                    <Route path="globe2" element={<Globe />} />
                     <Route path="feeder-map" element={<FeederMap />} />
                     <Route path="mlat-map" element={<MLATMap />} />
                     <Route path="feeder-status" element={<FeederStatus />} />
                     <Route path="*" element={<NoPage />} />
                 </Routes>
-            </div>
         )
     }
 }
