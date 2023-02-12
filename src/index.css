@@ -24,7 +24,7 @@ code {
 }
 
 .alert {
-  z-index:9999; 
+  z-index:1; 
   border-radius:0px
 }
 
