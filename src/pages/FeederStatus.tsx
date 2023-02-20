@@ -1,5 +1,6 @@
 import axios from "axios";
 import React from "react";
+import { Col, Container, Row, Table } from "react-bootstrap";
 
 export default class FeederStatus extends React.Component {
     state = null;
@@ -13,7 +14,7 @@ export default class FeederStatus extends React.Component {
             mlatStatus: 'Not connected',
             mlatStyle: null,
             ip: null,
-            uuid: null,
+            uuid: [],
             kbits: null,
             messages: null,
             positions: null,
@@ -36,8 +37,8 @@ export default class FeederStatus extends React.Component {
                 beastStyle: r.data.feederClients ? 'green' : 'red',
                 mlatStatus: r.data.feederMlats ? 'Connected' : 'Not connected',
                 mlatStyle: r.data.feederMlats ? 'green' : 'red',
-                ip: r.data.feederClients[0].host,
-                uuid: receiverIds,
+                ip: r.data.host,
+                uuid: r.data.feederClients,
                 kbits: r.data.feederClients[0].avg_kbit_s,
                 messages: r.data.feederClients[0].messages_s,
                 positions: r.data.feederClients[0].positions_s,
@@ -48,43 +49,63 @@ export default class FeederStatus extends React.Component {
 
     render() {
         return (
-            <center>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <h3>Your IP</h3>
-                <p>{this.state.ip}</p>
-                <h3>Feeder ID(s)</h3>
-                <p>{this.state.uuid}</p>
-                <h3>Beast Feed Status</h3>
-                <h3 style={{color: this.state.beastStyle}}>{this.state.beastStatus}</h3>
-                <h3>MLAT Feed Status</h3>
-                <h3 style={{color: this.state.mlatStyle}}>{this.state.mlatStatus}</h3>
-                <br/>
-                <br/>
-                <br/>
-                <table className='feedStats'>
-                    <tbody>
-                        <tr>
-                            <td>Avg kbit/s</td>
-                            <td>{this.state.kbits}</td>
-                        </tr>
-                        <tr>
-                            <td>Messages/s</td>
-                            <td>{this.state.messages}</td>
-                        </tr>
-                        <tr>
-                            <td>Positions/s</td>
-                            <td>{this.state.positions}</td>
-                        </tr>
-                        <tr>
-                            <td>Total Positions</td>
-                            <td>{this.state.tPositions}</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </center>
+            <Container fluid className='text-center h-100'>
+                <Row>
+                    <Col>
+                        <h1>Your IP</h1>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col>
+                        <p>{this.state.ip}</p>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col>
+                        <h1>Beast Feed Status</h1>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col>
+                        <h3 style={{color: this.state.beastStyle}}>{this.state.beastStatus}</h3>
+                        {this.state.uuid.map((dat: any) => {
+                            return [
+                                <Container className='w-50'>
+                                    <p>{dat.receiverId}</p>
+                                    <Row>
+                                        <Col>
+                                            <h5>Avg. kbit/s</h5>
+                                            <p>{dat.avg_kbit_s}</p>
+                                        </Col>
+                                        <Col>
+                                            <h5>Messages/s</h5>
+                                            <p>{dat.messages_s}</p>
+                                        </Col>
+                                        <Col>
+                                            <h5>Positions/s</h5>
+                                            <p>{dat.positions_s}</p>
+                                        </Col>
+                                        <Col>
+                                            <h5>Total Positions</h5>
+                                            <p>{dat.positions}</p>
+                                        </Col>
+                                    </Row>
+                                </Container>
+                            ]
+                        })}
+                    </Col>
+                </Row>
+                <Row>
+                    <Col>
+                        <h1>MLAT Feed Status</h1>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col>
+                        <h3 style={{color: this.state.mlatStyle}}>{this.state.mlatStatus}</h3>
+                    </Col>
+                </Row>
+            </Container>
         );
     }
 }
