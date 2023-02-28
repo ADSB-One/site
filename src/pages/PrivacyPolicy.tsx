@@ -205,11 +205,11 @@ export default class PrivacyPolicy extends React.Component {
                     <br/>
                     If you are located in Switzerland, the contact details for the data protection authorities are available here: <a href='https://www.edoeb.admin.ch/edoeb/en/home.html'>https://www.edoeb.admin.ch/edoeb/en/home.html</a>.<br/>
                     <br/>
-                    <b>Withdrawing your consent:</b> If we are relying on your consent to process your personal information, which may be express and/or implied consent depending on the applicable law, you have the right to withdraw your consent at any time. You can withdraw your consent at any time by contacting us by using the contact details provided in the section "<a href='#contact'>How can you contact us about this notice?</a>" below or updating your preferences.<br/>
+                    <b>Withdrawing your consent:</b> If we are relying on your consent to process your personal information, which may be express and/or implied consent depending on the applicable law, you have the right to withdraw your consent at any time. You can withdraw your consent at any time by contacting us by using the contact details provided in the section "<a href='#section16'>How can you contact us about this notice?</a>" below or updating your preferences.<br/>
                     <br/>
                     However, please note that this will not affect the lawfulness of the processing before its withdrawal nor, when applicable law allows, will it affect the processing of your personal information conducted in reliance on lawful processing grounds other than consent.<br/>
                     <br/>
-                    Opting out of marketing and promotional communications: You can unsubscribe from our marketing and promotional communications at any time by clicking on the unsubscribe link in the emails that we send, replying "STOP" or "UNSUBSCRIBE" to the SMS messages that we send, Changing preferences on the site in the account profile section, or by contacting us using the details provided in the section "<a href='#contact'>How can you contact us about this notice?</a>" below. You will then be removed from the marketing lists. However, we may still communicate with you — for example, to send you service-related messages that are necessary for the administration and use of your account, to respond to service requests, or for other non-marketing purposes.<br/>
+                    Opting out of marketing and promotional communications: You can unsubscribe from our marketing and promotional communications at any time by clicking on the unsubscribe link in the emails that we send, replying "STOP" or "UNSUBSCRIBE" to the SMS messages that we send, Changing preferences on the site in the account profile section, or by contacting us using the details provided in the section "<a href='#section16'>How can you contact us about this notice?</a>" below. You will then be removed from the marketing lists. However, we may still communicate with you — for example, to send you service-related messages that are necessary for the administration and use of your account, to respond to service requests, or for other non-marketing purposes.<br/>
                     <br/>
                     <b>Account Information</b><br/>
                     If you would at any time like to review or change the information in your account or terminate your account, you can:
@@ -308,7 +308,7 @@ export default class PrivacyPolicy extends React.Component {
                             </tr>
                             <tr>
                                 <td>K. Inferences drawn from other personal information</td>
-                                <td>Inferences drawn from any of the collected personal information listed above to create a profile or summary about, for example, an individual’s preferences and characteristics</td>
+                                <td>Inferences drawn from any of the collected personal information listed above to create a profile or summary about, for example, an individual's preferences and characteristics</td>
                                 <td>NO</td>
                             </tr>
                             <tr>
@@ -431,7 +431,7 @@ export default class PrivacyPolicy extends React.Component {
                     <u>Exercise your rights provided under the Virginia CDPA</u><br/>
                     More information about our data collection and sharing practices can be found in this privacy notice.<br/>
                     <br/>
-                    You may contact us by email at <a href='privacy@adsb.one'>privacy@adsb.one</a>, by visiting adsb.one/privacy-policy, or by referring to the contact details at the bottom of this document.<br/>
+                    You may contact us by email at <a href='privacy@adsb.one'>privacy@adsb.one</a>, by visiting <a href='adsb.one/privacy-policy'>adsb.one/privacy-policy</a>, or by referring to the contact details at the bottom of this document.<br/>
                     <br/>
                     If you are using an authorized agent to exercise your rights, we may deny a request if the authorized agent does not submit proof that they have been validly authorized to act on your behalf.<br/>
                     <br/>
