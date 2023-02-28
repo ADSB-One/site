@@ -12,7 +12,7 @@ export default class PrivacyPolicy extends React.Component {
                 <br/>
 
                 <p className='lead'>
-                    This privacy notice for ADSB One (<b>"Company</b>," <b>"we</b>," <b>"us</b>," or <b>"our</b>"), describes how and why we might collect, store, use, and/or share ("process") your information when you use our services ("Services"), such as when you:
+                    This privacy notice for ADS-B One (<b>"Company</b>," <b>"we</b>," <b>"us</b>," or <b>"our</b>"), describes how and why we might collect, store, use, and/or share ("<b>process</b>") your information when you use our services ("<b>Services</b>"), such as when you:
                     <ul>
                         <li>Visit our website at example.com, or any website of ours that links to this privacy notice</li>
                         <li>Engage with us in other related ways, including any sales, marketing, or events</li>
@@ -23,18 +23,18 @@ export default class PrivacyPolicy extends React.Component {
                 <h4>SUMMARY OF KEY POINTS</h4>
                 <p className='lead'>
                     <b>This summary provides key points from our privacy notice, but you can find out more details about any of these topics by clicking the link following each key point or by using our table of contents below to find the section you are looking for. You can also click here to go directly to our table of contents.</b><br/>
-                    <b>What personal information do we process?</b> When you visit, use, or navigate our Services, we may process personal information depending on how you interact with ADSB One and the Services, the choices you make, and the products and features you use. Click here to learn more.<br/>
+                    <b>What personal information do we process?</b> When you visit, use, or navigate our Services, we may process personal information depending on how you interact with ADS-B One and the Services, the choices you make, and the products and features you use. Click here to learn more.<br/>
                     <b>Do we process any sensitive personal information?</b> We do not process sensitive personal information.<br/>
                     <b>Do we receive any information from third parties?</b> We do not receive any information from third parties.<br/>
-                    <b>How do we process your information?</b> We process your information to provide, improve, and administer our Services, communicate with you, for security and fraud prevention, and to comply with law. We may also process your information for other purposes with your consent. We process your information only when we have a valid legal reason to do so. Click here to learn more.<br/>
-                    <b>In what situations and with which parties do we share personal information?</b> We may share information in specific situations and with specific third parties. Click here to learn more.<br/>
-                    <b>How do we keep your information safe?</b> We have organizational and technical processes and procedures in place to protect your personal information. However, no electronic transmission over the internet or information storage technology can be guaranteed to be 100% secure, so we cannot promise or guarantee that hackers, cybercriminals, or other unauthorized third parties will not be able to defeat our security and improperly collect, access, steal, or modify your information. Click here to learn more.<br/>
-                    <b>What are your rights?</b> Depending on where you are located geographically, the applicable privacy law may mean you have certain rights regarding your personal information. Click here to learn more.<br/>
+                    <b>How do we process your information?</b> We process your information to provide, improve, and administer our Services, communicate with you, for security and fraud prevention, and to comply with law. We may also process your information for other purposes with your consent. We process your information only when we have a valid legal reason to do so. Click <a href='section2'>here</a> to learn more.<br/>
+                    <b>In what situations and with which parties do we share personal information?</b> We may share information in specific situations and with specific third parties. Click <a href='section4'>here</a> to learn more.<br/>
+                    <b>How do we keep your information safe?</b> We have organizational and technical processes and procedures in place to protect your personal information. However, no electronic transmission over the internet or information storage technology can be guaranteed to be 100% secure, so we cannot promise or guarantee that hackers, cybercriminals, or other unauthorized third parties will not be able to defeat our security and improperly collect, access, steal, or modify your information. Click <a href='section8'>here</a> to learn more.<br/>
+                    <b>What are your rights?</b> Depending on where you are located geographically, the applicable privacy law may mean you have certain rights regarding your personal information. Click <a href='section10'>here</a> to learn more.<br/>
                     <b>How do you exercise your rights?</b> The easiest way to exercise your rights is by filling out our data subject request form available here: drfsaf.com/privacy, or by contacting us. We will consider and act upon any request in accordance with applicable data protection laws.<br/>
-                    Want to learn more about what ADSB One does with any information we collect? Click here to review the notice in full.
+                    Want to learn more about what ADS-B One does with any information we collect? Click <a href='toc'>here</a> to review the notice in full.
                 </p><br/>
 
-                <h4>TABLE OF CONTENTS</h4>
+                <h4 id='toc'>TABLE OF CONTENTS</h4>
                 <a href='#section1'>1. What information do we collect?</a><br/>
                 <a href='#section2'>2. How do we process your information?</a><br/>
                 <a href='#section3'>3. What legal bases do we rely on to process your personal information?</a><br/>
